@@ -23,3 +23,12 @@ Gerenciar uma aplicação onde é possível cadastrar usuários, validá-los por
 - Collection das request para Postman
 - DER
 - Backup banco de dados
+
+## Links úteis 
+
+- Instalação Laravel (https://laravel.com/docs/8.x/installation)
+- Instalação Composer (https://getcomposer.org/doc/00-intro.md)
+- Instalação de bibliotecas (https://packagist.org/?query=gu)
+- Uso do PHPStan (https://imasters.com.br/php/detectando-erros-no-seu-codigo-sem-executa-lo-com-phpstan)
+- Download MySQL Server (https://downloads.mysql.com/archives/community/)
+- Download MySQL Workbench (https://dev.mysql.com/downloads/workbench/)
