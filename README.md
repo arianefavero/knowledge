@@ -23,6 +23,8 @@ Gerenciar uma aplicação onde é possível cadastrar usuários, validá-los por
 - Collection das request para Postman
 - DER
 - Backup banco de dados
+- Casos de Uso
+- Fluxograma
 
 ## Links úteis 
 
