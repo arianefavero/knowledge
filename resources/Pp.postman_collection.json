@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "2e4adb2a-9453-4547-a10f-73c55f447c6e",
+		"name": "Pp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "usuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}users",
+					"host": [
+						"{{baseUrl}}users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUsuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}getUsers?email=emilio.pionatto@gmail.com",
+					"host": [
+						"{{baseUrl}}getUsers"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "emilio.pionatto@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insertUsers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}insertUsers?first_name=Mamae&last_name=Rose&document=12312312355&email=mae@roseli.com&password=e10adc3949ba59abbe56e057f20f883e",
+					"host": [
+						"{{baseUrl}}insertUsers"
+					],
+					"query": [
+						{
+							"key": "first_name",
+							"value": "Mamae"
+						},
+						{
+							"key": "last_name",
+							"value": "Rose"
+						},
+						{
+							"key": "document",
+							"value": "12312312355"
+						},
+						{
+							"key": "email",
+							"value": "mae@roseli.com"
+						},
+						{
+							"key": "password",
+							"value": "e10adc3949ba59abbe56e057f20f883e"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consultaSaldo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}consultaSaldo?user_id=a30c6ca8-f6c0-11eb-9a03-0242ac130003",
+					"host": [
+						"{{baseUrl}}consultaSaldo"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "a30c6ca8-f6c0-11eb-9a03-0242ac130003"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transferencia",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"wallet_origin\": \"ac64bc86-f6c2-11eb-9a03-0242ac130003\",\n    \"wallet_destiny\": \"9c15933c-f6c2-11eb-9a03-0242ac130003\",\n    \"transaction_value\": 20.01,\n    \"description\": \"copo\",\n    \"type_id\": \"575f7a60-f6c1-11eb-9a03-0242ac130003\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}transferencia",
+					"host": [
+						"{{baseUrl}}transferencia"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://127.0.0.1:8000/api/v1/"
+		}
+	]
+}
