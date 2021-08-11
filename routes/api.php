@@ -25,8 +25,4 @@ Route::prefix('v1')->group(function () {
     Route::post('insertUsers', [UserController::class, 'insertUser']);
     Route::get('consultaSaldo', [WalletController::class, 'index']);
     Route::post('transferencia', [TransactionController::class, 'transfer']);
-
-
-
-
 });

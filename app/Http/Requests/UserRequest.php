@@ -26,7 +26,7 @@ class UserRequest extends FormRequest
             return [
                 'password' => 'required|string|min:6',
                 'email' => 'required|string',
-                'document' => 'required|numeric'
+                'document' => 'required|numeric|digits_between:11,14'
             ];
 
     }
