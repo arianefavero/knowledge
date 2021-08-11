@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Users;
 use App\Models\Login;
 use App\Services\UserServices;
+use App\Http\Requests\UserRequest;
 
 
 
@@ -31,7 +32,7 @@ class UserController extends Controller
         try{
             $data = $request->all();
             $user = $this->userService->getUser($data);
-      
+
             if(isset($user) && count($user) >= 1){
                 return response()->json(['ret' => 1, 'msg' => 'Parabéns, você já é um felizardo P', 'info' => $user] , 200);
             } else {
@@ -44,14 +45,14 @@ class UserController extends Controller
     }
 
     // Função que gerencia a inserção de um novo usuário
-    public function insertUser(Request $request)
+    public function insertUser(UserRequest $request)
     {
         try{
             $data = $request->all();
             $response = $this->userService->create($data);
-            
+
             return response()->json($response, 201);
-            
+
         } catch (\Exception $e){
             return response()->json(['ret' => 0, 'msg' => 'Erro ao pesquisar usuário', 'erro' => $e->getMessage()], 500);
         }
