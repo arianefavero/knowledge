@@ -10,7 +10,7 @@ Para rodar o projeto, siga os passos abaixo:
 - Inicie o terminal entrando na pasta do projeto e digite composer install para instalar as dependências do Laravel
 - Lembre-se de criar uma branch exclusiva para você trabalhar em sua máquina local
 - Para testar as apis, utilize o Postman (http://127.0.0.1:8000/api/v1/sua_rota_aqui)
-- Faça o restore do dump do banco de dados
+- Faça o restore do dump (db_transactions) do banco de dados
 
 ## Tecnologias envolvidas 
 
