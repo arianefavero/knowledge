@@ -2,6 +2,16 @@
 
 Gerenciar uma aplicação onde é possível cadastrar usuários, validá-los por meio de CPF e/ou email para não gerar duplicidade de registros, além de consultar a conta corrente desse usuário, fornecendo-lhe as opções para transações bancárias.
 
+## Começando 
+
+Para rodar o projeto, siga os passos abaixo:
+
+- Clone o projeto para sua área gerenciada pelo Docker (https://github.com/arianefavero/knowledge.git)
+- Inicie o terminal entrando na pasta do projeto e digite composer install para instalar as dependências do Laravel
+- Lembre-se de criar uma branch exclusiva para você trabalhar em sua máquina local
+- Para testar as apis, utilize o Postman (http://127.0.0.1:8000/api/v1/sua_rota_aqui)
+- Faça o restore do dump do banco de dados
+
 ## Tecnologias envolvidas 
 
 - Framework Laravel e bibliotecas adicionais
